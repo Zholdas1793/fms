@@ -1,0 +1,61 @@
+//libs
+@import 'libs/slick';
+@import 'libs/slick-theme';
+@import 'libs/animate.min.scss';
+//base
+@import 'base/variables';
+@import 'base/mixins';
+
+//blocks
+@import 'block/header';
+@import 'block/promo';
+@import 'block/prengi';
+@import 'block/decision';
+@import 'block/advantages';
+@import 'block/options';
+@import 'block/contact';
+@import 'block/footer';
+@import 'block/mymodal';
+
+
+
+*{
+    font-family: $fonts;
+    font-weight: 400;
+    font-size: 14px;  
+    color: #242424;
+    box-sizing: border-box;
+    outline: none;
+    
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+button {
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.mybtn {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.07);
+    background-color: #00c2f0;
+    color: #ffffff;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+@media (max-width: 575.98px) {
+    .title {
+        font-size: 13px;
+    }
+}
