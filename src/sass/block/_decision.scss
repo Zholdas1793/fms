@@ -10,7 +10,8 @@
         position: relative;
     }
     &__slider__nav {
-        width: 843px;
+        min-width: 100%;
+        max-width: 843px;
         height: 65px;
         border: 1px solid #ffffff;
         margin: 0 auto;
@@ -56,10 +57,13 @@
         margin-top: 35px;
         display: flex!important;
         justify-content: center;
+        img {
+            max-width: 100%;
+        }
     }
 
     .prevSL, .nextSL {
-        width: 100px;
+        width: 20px;
         height: 100px;
         display: flex;
         justify-content: center;
@@ -107,9 +111,9 @@
     
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
     .decision {
-        height: 300px;
+        height: 83%;
         padding: 30px 0 10px 0;
         .title {
             margin-bottom: 0;
@@ -138,6 +142,7 @@
         }
     }
 }
+
 
 
 

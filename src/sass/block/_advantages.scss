@@ -3,7 +3,7 @@
     .title {
         margin-bottom: 44px;
     }
-    .col-6 {
+    .p0 {
         padding: 0!important;
     }
     &__item {
@@ -50,13 +50,40 @@
         &__item {
             margin: 5px 0;
             &::before {
-                height: 80px;
+                height: 67%;
             }
             &__text {
-                font-size: 13px;
-                line-height: 18px;
+                font-size: 100%;
+                line-height: 130%;
                 padding: 0 30px;
             }
         }
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .advantages {
+        padding: 30px 0 10px 0;
+        .title {
+            margin-bottom: 20px;
+        }
+        &__item {
+            margin: 5px 0;
+            &::before {
+                height: 67%;
+            }
+            &__text {
+                font-size: 23px;
+                line-height: 26px;
+                line-height: 130%;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .advantages__item__text {
+        font-size: 15px;
     }
 }

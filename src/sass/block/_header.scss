@@ -1,6 +1,5 @@
 header {
     padding: 20px 0;
-    display: none;
     .header__wrap {
         display: flex;
     }
@@ -33,6 +32,7 @@ header {
 
 @media (max-width: 575.98px) { 
     header {
+        display: none;
         padding: 15px 0 5px 0;
         .header__wrap {
             flex-wrap: wrap;
@@ -60,4 +60,27 @@ header {
         }
     }
     
+ }
+
+ @media (min-width: 576px) and (max-width: 767.98px) {
+     header {
+         display: none;
+     }
+ }
+
+ @media (min-width: 768px) and (max-width: 991.98px) { 
+     header {
+        .header__item {
+            img {
+                width: 21px;
+                height: 14px;
+            }
+            &-contact {
+                font-size: 10px;
+            }
+            &-title {
+                font-size: 12px;
+            }
+        }
+     }
  }
