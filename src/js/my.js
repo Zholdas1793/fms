@@ -55,10 +55,16 @@ $(document).ready(function () {
         $('body').children('*:not(script, .mymodal)').removeClass('blur');
     });
 
-    $(document).mouseup(function (e){ // событие клика по веб-документу
-        $('.mymodal').fadeOut(500);
-        $('body').children('*:not(script, .mymodal)').removeClass('blur');
-    });
+    $(document).on('click', function(e){
+		if (!(
+		($(e.target).parents('.mymodal__content').length)
+		||	($(e.target).hasClass('mymodal__content'))
+		||	($(e.target).hasClass('btn-form')))
+		) {
+            $('.mymodal').fadeOut(500);
+            $('body').children('*:not(script, .mymodal)').removeClass('blur');
+		}
+	});
     
 
 
