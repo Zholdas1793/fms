@@ -74,7 +74,25 @@ $(document).ready(function () {
         $('.promo__mobail__btn').toggleClass('promo__mobail__btn-active');
         $('.promo__mobail__menu').toggleClass('promo__mobail__menu__active')
     });
+
+
+
+    $('.mymodal__form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+        }).done(function() {
+            $(this).find("input").val("");
+        
+            $('form').trigger('reset');
+        });
+        return false;
+    });
 });
+
+
 
 
 
